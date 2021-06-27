@@ -1,29 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Window 11 clone</title>
-    <script src="https://kit.fontawesome.com/2a09947573.js" crossorigin="anonymous"></script>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Windows 11 clone</title>
+    <script
+      src="https://kit.fontawesome.com/2a09947573.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="taskbar">
-        <i class="fab fa-windows fa-lg"></i>
-        <img src="Assets/icons/search.png" alt="taskbar">
-        <img src="Assets/icons/edgeicon.png" alt="taskbar" >
-        <img src="Assets/icons/file-explorer.png" alt="taskbar" >
-        <img src="Assets/icons/vscode.png" alt="taskbar" >
+      <i class="fab fa-windows fa-lg" id="window-icon"></i>
+      <img src="Assets/icons/search.png" alt="search" />
+      <img src="Assets/icons/edgeicon.png" alt="edge" />
+      <img src="Assets/icons/file-explorer.png" alt="file explorer" />
+      <img src="Assets/icons/vscode.png" alt="vs-code" />
     </div>
-    <div class="startmenu">
-        <div>
-            <strong>Pinned</strong>
+    <div class="startmenu" id="startmenu">
+      <section>
+        <div class="upper-sec">
+          <strong> Pinned </strong>
+          <span>
+            All apps <i class="fas fa-chevron-right"></i>
+          </span>
         </div>
+        <div class="pinned">
+          <div class="pinned-icon">
+            <img src="Assets/icons/edgeicon.png" alt="edge" />
+            <div>Microsoft Edge</div>
+          </div>
+          <div class="pinned-icon">
+            <img src="Assets/pinned-icons/calculator.png" alt="calculator" />
+            <div>Calculator</div>
+          </div>
+          <div class="pinned-icon">
+            <img src="Assets/pinned-icons/gallery.png" alt="Photos" />
+            <div>Photos</div>
+          </div>
+          <div class="pinned-icon">
+            <img src="Assets/pinned-icons/mail.png" alt="mail" />
+            <div>Mail</div>
+          </div>
+          <div class="pinned-icon">
+            <img src="Assets/pinned-icons/Weather.png" alt="weather" />
+            <div>Weather</div>
+          </div>
+          <div class="pinned-icon">
+            <img src="Assets/icons/vscode.png" alt="vs-code" />
+            <div>Vs Code</div>
+          </div>
+          <div class="pinned-icon">
+            <img src="Assets/icons/file-explorer.png" alt="file-explorer" />
+            <div>File Explorer</div>
+          </div>
+          <div class="pinned-icon">
+            <img src="Assets/pinned-icons/tips.png" alt="tips" />
+            <div>Tips</div>
+          </div>
+          <div class="pinned-icon">
+            <img src="Assets/pinned-icons/teams.png" alt="teams" />
+            <div>Teams</div>
+          </div>
+        </div>
+
+        <div class="lower-sec">
+          <strong> Recommended </strong>
+          <span>
+            More <i class="fas fa-chevron-right"></i>
+          </span>
+        </div>
+        <div class="recommended">
+          <div class="recommended-icon">
+            <img src="Assets/Recent icons/cmd.png" alt="cmd" />
+            <div>Node.js command prompt
+            <div style="color:grey; font-weight: 400;">Recently Added</div>
+          </div>
+          </div>
+          
+          <div class="recommended-icon">
+            <img src="Assets/Recent icons/mongodb.png" alt="cmd" />
+            <div>The Mongodb Compass
+            <div style="color:grey; font-weight: 400;">Recently Added</div>
+            </div>
+          </div>
+          <div class="recommended-icon">
+            <img src="Assets/Recent icons/nodejs.png" alt="cmd" />
+            <div>Node.js
+            <div style="color:grey; font-weight: 400;">Recently Added</div>
+            </div>
+          </div>
+          <div class="recommended-icon">
+            <img src="Assets/Recent icons/github.png" alt="cmd" />
+            <div>Logged in as (Garima..
+            <div style="color:grey; font-weight: 400;">Recently Added</div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="account">
+          <div class="profile">
+            <img src="Assets/user.png" alt="user">
+            <strong>Garima Sharma</strong>
+          </div>
+          <img src="Assets/power-off.png" alt="off">
+        </div>
+      </section>
     </div>
     <video autoplay muted>
-        <source src="Assets/video.webm" type="video/webm">
+      <source src="Assets/video.webm" type="video/webm" />
     </video>
-</body>
+    <script src="index.js"></script>
+  </body>
 </html>

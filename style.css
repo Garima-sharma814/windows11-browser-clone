@@ -1,62 +1,187 @@
-*{
-    margin: 0;
-    padding: 0;
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    /* background-image: url('Assets/bg.jpeg'); */
-    background-size: cover;
-    overflow: hidden;
-    height: 100vh;
+body {
+  /* background-image: url('Assets/bg.jpeg'); */
+  background-size: cover;
+  overflow: hidden;
+  height: 100vh;
+  font-family: "Open Sans", sans-serif;
 }
 
-video{
-    width: 100vw;
-    height: 120vh;
-    position: absolute;
-    bottom: 0; 
-}
-.taskbar{
-    z-index: 100;
-    width: 100%;
-    height: 35px;
-    /* background-image: linear-gradient(to left, white, #f3f3f3); */
-    background: linear-gradient(to right bottom, rgba(247, 246, 246, 0.856), rgba(255, 255, 255, 0.877));
-    /* background-color: #f3f3f3; */
-    position: absolute;
-    bottom: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0.9;
+video {
+  width: 100vw;
+  height: 120vh;
+  position: absolute;
+  bottom: 0;
 }
 
-.taskbar img{
-    margin: 0 7px;
-    width: 21px;
-    height: 21px;
+/* taskbar  */
+.taskbar {
+  z-index: 1000;
+  width: 100%;
+  height: 35px;
+  /* background-image: linear-gradient(to left, white, #f3f3f3); */
+  background: linear-gradient(
+    to right bottom,
+    rgba(247, 246, 246, 0.856),
+    rgba(255, 255, 255, 0.877)
+  );
+  /* background-color: #f3f3f3; */
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.9;
 }
 
-.startmenu{
-    z-index: 100;
-    background-image: linear-gradient(to left, rgba(255, 255, 255, 0.884), #f3f3f3d3);
-    /* background: linear-gradient(to right bottom, rgba(247, 246, 246, 0.836), rgba(255, 255, 255, 0.829)); */
-    opacity: 1;
-    position: absolute;
-    bottom: 60px;
-    left: 500px;
-    margin: 0 auto;
-    height: 500px;
-    width: 500px;
-    /* border: 1px solid red; */
-    border-radius: 8px;
+.taskbar img {
+  cursor: pointer;
+  margin: 0 10px;
+  width: 21px;
+  height: 21px;
+}
+
+/* startmenu  */
+.startmenu {
+  z-index: 100;
+  background-image: linear-gradient(
+    to left,
+    rgba(255, 255, 255, 0.884),
+    #f3f3f3d3
+  );
+  opacity: 1;
+  position: absolute;
+  bottom: -545px;
+  left: 65vh;
+  width: 100%;
+  margin: 0 auto;
+  height: 550px;
+  width: 550px;
+  border-radius: 8px;
+  transition: all 0.3s ease-in; 
+}
+
+section {
+  width: 470px;
+  display: block;
+  margin: auto auto;
+}
+
+section .upper-sec {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+/* upper section  */
+.upper-sec span {
+  cursor: pointer;
+  border: 1px solid grey;
+  padding: 3px;
+  border-radius: 5px;
+  box-shadow: 0px 1px 4px 0px grey;
+}
+.lower-sec span {
+  cursor: pointer;
+  border: 1px solid grey;
+  padding: 3px;
+  border-radius: 5px;
+  box-shadow: 0px 1px 4px 0px grey;
 }
 
 
 
+/* pinned icons  */
+.pinned {
+  display: grid;
+  grid-column-gap: 25px;
+  grid-row-gap: 5px;
+  grid-template-columns: auto auto auto auto auto;
+  padding: 10px;
+}
 
+.pinned-icon {
+  width: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.pinned-icon img {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+}
+
+/* lower section  */
+section .lower-sec {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+/* recommended icons  */
+.recommended{
+  display: grid;
+  grid-column-gap: 25px;
+  grid-row-gap: 25px;
+  grid-template-columns: auto auto;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+.recommended-icon{
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: bold;
+  display: flex;
+  flex-wrap: nowrap;
+  /* width: 50%; */
+}
+
+.recommended-icon img{
+  margin-right: 10px;
+  width: 30px;
+  height: 30px;
+}
+
+
+/*Profile */
+.account{
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.profile{
+  display: flex;
+  align-items: center;
+}
+
+.profile strong{
+  margin-left: 5px;
+}
+.account img{
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+}
 /* fontawesome icons */
-.fa-windows{
-    color: #156efe;
+.fa-windows {
+  cursor: pointer;
+  color: #156efe;
 }
-
