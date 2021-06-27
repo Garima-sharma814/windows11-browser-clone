@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /* background-image: url('Assets/bg.jpeg'); */
+    background-size: cover;
+    overflow: hidden;
+    height: 100vh;
+}
+
+video{
+    width: 100vw;
+    height: 120vh;
+    position: absolute;
+    bottom: 0; 
+}
+.taskbar{
+    z-index: 100;
+    width: 100%;
+    height: 35px;
+    /* background-image: linear-gradient(to left, white, #f3f3f3); */
+    background: linear-gradient(to right bottom, rgba(247, 246, 246, 0.856), rgba(255, 255, 255, 0.877));
+    /* background-color: #f3f3f3; */
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.9;
+}
+
+.taskbar img{
+    margin: 0 7px;
+    width: 21px;
+    height: 21px;
+}
+
+.startmenu{
+    z-index: 100;
+    background-image: linear-gradient(to left, rgba(255, 255, 255, 0.884), #f3f3f3d3);
+    /* background: linear-gradient(to right bottom, rgba(247, 246, 246, 0.836), rgba(255, 255, 255, 0.829)); */
+    opacity: 1;
+    position: absolute;
+    bottom: 60px;
+    left: 500px;
+    margin: 0 auto;
+    height: 500px;
+    width: 500px;
+    /* border: 1px solid red; */
+    border-radius: 8px;
+}
+
+
+
+
+/* fontawesome icons */
+.fa-windows{
+    color: #156efe;
+}
+
