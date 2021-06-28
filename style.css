@@ -19,7 +19,28 @@ video {
   position: absolute;
   bottom: 0;
 }
+/* Window  */
+.window{
+  display: flex;
+}
+.window img{
+  width: 40px;
+  height: 40px;
+}
 
+.recycle{
+  cursor: pointer;
+  position: absolute;
+  top: 30px;
+  left: 20px;
+}
+
+.edge{
+  cursor: pointer;
+  position: absolute;
+  top: 120px;
+  left: 20px;
+}
 /* taskbar  */
 .taskbar {
   z-index: 1000;
@@ -45,6 +66,26 @@ video {
   margin: 0 10px;
   width: 21px;
   height: 21px;
+}
+
+.tasks{
+  cursor: pointer;
+  width: 34px;
+    height: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tasks:hover{
+  background: linear-gradient(
+    to right bottom,
+    rgb(196, 195, 195),
+    rgba(240, 237, 237, 0.877)
+  ); 
+}
+.tasks:hover .fa-windows{
+  color: #4cbd0b;
 }
 
 /* startmenu  */
@@ -185,3 +226,4 @@ section .lower-sec {
   cursor: pointer;
   color: #156efe;
 }
+
