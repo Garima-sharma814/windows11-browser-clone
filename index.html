@@ -13,12 +13,39 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="window">
+      <div class="recycle">
+        <img src="Assets/recyclebinicon.png" alt="recycle bin">
+        <div style="font-size: 12px">Recycle bin</div>
+      </div>
+      <div class="edge">
+        <img src="Assets/icons/edgeicon.png" alt="recycle bin">
+        <div style="font-size: 12px; text-align: center;" >Microsoft edge</div>
+      </div>
+    </div>
     <div class="taskbar">
-      <i class="fab fa-windows fa-lg" id="window-icon"></i>
-      <img src="Assets/icons/search.png" alt="search" />
-      <img src="Assets/icons/edgeicon.png" alt="edge" />
-      <img src="Assets/icons/file-explorer.png" alt="file explorer" />
-      <img src="Assets/icons/vscode.png" alt="vs-code" />
+      <div class="tasks" id="window-icon">
+        <i class="fab fa-windows fa-lg" ></i>
+      </div>
+      <div class="tasks">
+
+        <img src="Assets/icons/search.png" alt="search" />
+      </div>
+      <div class="tasks">
+
+        <img src="Assets/icons/edgeicon.png" alt="edge" />
+      </div>
+
+      <div class="tasks">
+        <img src="Assets/icons/file-explorer.png" alt="file explorer" />
+
+      </div>
+
+      <div class="tasks">
+        <img src="Assets/icons/vscode.png" alt="vs-code" />
+
+      </div>
+
     </div>
     <div class="startmenu" id="startmenu">
       <section>
@@ -83,7 +110,7 @@
           
           <div class="recommended-icon">
             <img src="Assets/Recent icons/mongodb.png" alt="cmd" />
-            <div>The Mongodb Compass
+            <div>MongoDB Compass
             <div style="color:grey; font-weight: 400;">Recently Added</div>
             </div>
           </div>
